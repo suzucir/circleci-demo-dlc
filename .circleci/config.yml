@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: golang:1.6.4
+      - image: circleci/node:9.8.0-stretch-browsers
     steps:
       - checkout
       - setup_remote_docker:
